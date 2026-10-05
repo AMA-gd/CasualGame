@@ -6,26 +6,58 @@
     <title>Презентация CasualGame</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; text-align: center; padding: 40px 20px; margin: 0; }
-        .container { max-width: 900px; margin: 0 auto; background: #161b22; padding: 40px; border-radius: 16px; border: 1px solid #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
-        h1 { color: #f0f6fc; font-size: 32px; margin-bottom: 10px; }
-        p { font-size: 18px; color: #8b949e; line-height: 1.6; margin-bottom: 35px; }
-        video { width: 100%; max-height: 500px; border-radius: 12px; border: 1px solid #30363d; background: #000; outline: none; }
+        .container { max-width: 800px; margin: 0 auto; background: #161b22; padding: 40px 30px; border-radius: 16px; border: 1px solid #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+        h1 { color: #f0f6fc; font-size: 28px; margin-bottom: 30px; }
+        
+        /* Блок для каждой игры */
+        .game-section { margin-bottom: 40px; text-align: center; }
+        
+        /* Плеер сохраняет свои пропорции и не растягивается насильно */
+        video { width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #30363d; background: #000; display: block; margin: 0 auto; }
+        
+        /* Стиль для текста и ссылки */
+        .game-link-block { margin-top: 15px; font-size: 16px; color: #8b949e; }
+        .game-link { color: #58a6ff; text-decoration: none; font-weight: 500; }
+        .game-link:hover { text-decoration: underline; }
+        
+        /* Разделительная линия с отступом */
+        .divider { height: 1px; background-color: #30363d; border: none; margin: 40px 0 20px 0; }
+        /* Удаляем разделитель у самого последнего блока */
+        .game-section:last-child .divider { display: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Презентация игры CasualGame</h1>
-        <p>Добро пожаловать! Ниже представлено демонстрационное видео игрового процесса. Нажмите на плеер для запуска.</p>
-        
-        <!-- Замените адрес в src на вашу ссылку из Шага 1 -->
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_1.mp4" controls preload="metadata"></video>
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_2.mp4" controls preload="metadata"></video>
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_3.mp4" controls preload="metadata"></video>
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_4.mp4" controls preload="metadata"></video>
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_5.mp4" controls preload="metadata"></video>
-        <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_6.mp4" controls preload="metadata"></video>
+        <h1>Презентация игр CasualGame</h1>
+
+        <!-- ================= БЛОК ИГРЫ №1 ================= -->
+        <div class="game-section">
+            <!-- Видео (замените URL на вашу ссылку из релизов) -->
+            <video src="https://github.com/AMA-gd/CasualGame/releases/download/v1.0/compressed_1.mp4" controls preload="metadata"></video>
+            
+            <!-- Текст и ссылка после видео -->
+            <div class="Ссылка на игру:">
+                Ссылка на игру: <a href="https://devarm.itch.io/dotty" target="_blank" class="game-link">https://ССЫЛКА_НА_ВАШУ_ИГРУ_1</a>
+            </div>
+            
+            <!-- Разделительная линия -->
+            <hr class="divider">
+        </div>
+
+        <!-- ================= БЛОК ИГРЫ №2 (Пример для копирования) ================= -->
+        <div class="game-section">
+            <!-- Видео -->
+            <video src="ВСТАВЬТЕ_СЮДА_ССЫЛКУ_НА_ВИДЕО_2" controls preload="metadata"></video>
+            
+            <!-- Текст и ссылка -->
+            <div class="game-link-block">
+                Ссылка на игру: <a href="https://ССЫЛКА_НА_ВАШУ_ИГРУ_2" target="_blank" class="game-link">https://ССЫЛКА_НА_ВАШУ_ИГРУ_2</a>
+            </div>
+            
+            <!-- Разделительная линия -->
+            <hr class="divider">
+        </div>
+
     </div>
 </body>
 </html>
-
-
